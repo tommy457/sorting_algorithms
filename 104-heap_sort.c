@@ -14,7 +14,7 @@ void swap(int *array, size_t size, int *x, int *y);
  */
 void heap_sort(int *array, size_t size)
 {
-	int end;
+	size_t end;
 
 	if (!array || size < 2)
 		return;
@@ -94,7 +94,7 @@ void sift_down(int *array, size_t size, size_t start, size_t end)
  */
 void heapify(int *array, size_t size)
 {
-	int start;
+	ssize_t start;
 
 	start = iParent(size - 1);
 
