@@ -5,6 +5,9 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
+#define iParent(x) (((x) - 1) / 2)
+#define iLeftChild(x) (((x) * 2) + 1)
+
 /**
  * struct listint_s - Doubly linked list node
  *
