@@ -74,7 +74,7 @@ void sift_down(int *array, size_t size, size_t start, size_t end)
 		if (array[swp] < array[child])
 			swp = child;
 
-		if (child + 1 < end && array[swp] < array[child + 1])
+		if (child + 1 <= end && array[swp] < array[child + 1])
 			swp = child + 1;
 
 		if (swp == root)
